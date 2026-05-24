@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KlikFix</title>
+  <title>KlikFix — IT-ondersteuning op maat</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -16,54 +17,143 @@
       <li><a href="#over">Over ons</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="#contact" class="nav-cta">Neem contact op</a>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Snel gefixt,<br/>één klik verder.</h1>
-      <p>KlikFix lost jouw tech problemen op — snel, betrouwbaar en betaalbaar.</p>
-      <a href="#contact" class="btn">Neem contact op</a>
+      <p class="label">Professionele IT-ondersteuning</p>
+      <h1>Technische problemen opgelost. Snel en vakkundig.</h1>
+      <p class="sub">KlikFix biedt betrouwbare IT-ondersteuning voor particulieren en bedrijven. Geen gedoe, geen lange wachttijden.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Aanvraag indienen</a>
+        <a href="#diensten" class="btn btn-ghost">Onze diensten</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-card">
+        <div class="vc-row">
+          <div class="vc-dot green"></div>
+          <span>Probleem geidentificeerd</span>
+        </div>
+        <div class="vc-row">
+          <div class="vc-dot green"></div>
+          <span>Diagnose voltooid</span>
+        </div>
+        <div class="vc-row">
+          <div class="vc-dot yellow"></div>
+          <span>Reparatie bezig...</span>
+        </div>
+        <div class="vc-row muted">
+          <div class="vc-dot grey"></div>
+          <span>Oplevering</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat">
+      <h3>98%</h3>
+      <p>Klanttevredenheid</p>
+    </div>
+    <div class="stat">
+      <h3>&lt; 24u</h3>
+      <p>Gemiddelde responstijd</p>
+    </div>
+    <div class="stat">
+      <h3>500+</h3>
+      <p>Opgeloste problemen</p>
     </div>
   </section>
 
   <!-- DIENSTEN -->
   <section id="diensten" class="diensten">
-    <h2>Wat we doen</h2>
+    <div class="sectie-header">
+      <p class="label">Wat we doen</p>
+      <h2>Onze diensten</h2>
+      <p class="sectie-sub">Wij lossen uiteenlopende technische problemen op, snel en zonder onnodige kosten.</p>
+    </div>
     <div class="kaarten">
       <div class="kaart">
+        <div class="kaart-nummer">01</div>
         <h3>PC & Laptop Reparatie</h3>
-        <p>Traag, kapot of vastgelopen? Wij maken het weer als nieuw.</p>
+        <p>Traag systeem, softwareproblemen, hardware storingen of virussen — wij diagnosticeren en lossen het op.</p>
       </div>
       <div class="kaart">
+        <div class="kaart-nummer">02</div>
         <h3>Netwerk & WiFi</h3>
-        <p>Geen verbinding? Wij zorgen dat alles soepel loopt.</p>
+        <p>Instabiele verbinding, netwerkinstallatie of bedrijfsnetwerk inrichten — wij zorgen voor een solide infrastructuur.</p>
       </div>
     </div>
   </section>
 
   <!-- OVER ONS -->
   <section id="over" class="over">
-    <div class="over-content">
-      <h2>Over KlikFix</h2>
-      <p>KlikFix is opgericht om iedereen snel en eerlijk te helpen met technische problemen. Geen gedoe, geen lange wachttijden — gewoon direct geholpen.</p>
+    <div class="over-inner">
+      <div class="over-tekst">
+        <p class="label label-light">Over KlikFix</p>
+        <h2>Eerlijk, transparant en resultaatgericht</h2>
+        <p>KlikFix is opgericht vanuit de overtuiging dat goede IT-ondersteuning toegankelijk moet zijn. Wij werken zonder verborgen kosten en communiceren helder over wat we doen en waarom.</p>
+        <p>Of het nu gaat om een eenmalig probleem of terugkerende ondersteuning — u kunt op ons rekenen.</p>
+      </div>
+      <div class="over-lijst">
+        <div class="over-item">
+          <div class="check"></div>
+          <span>Vaste, transparante tarieven</span>
+        </div>
+        <div class="over-item">
+          <div class="check"></div>
+          <span>Geen oplossing, geen rekening</span>
+        </div>
+        <div class="over-item">
+          <div class="check"></div>
+          <span>Beschikbaar 7 dagen per week</span>
+        </div>
+        <div class="over-item">
+          <div class="check"></div>
+          <span>Jarenlange vakkennis</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Jouw naam" required />
-      <input type="email" placeholder="Jouw e-mail" required />
-      <textarea rows="5" placeholder="Omschrijf jouw probleem..."></textarea>
-      <button type="submit" class="btn">Versturen</button>
-    </form>
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p class="label">Contact</p>
+        <h2>Neem contact op</h2>
+        <p>Omschrijf uw probleem en wij nemen binnen 24 uur contact met u op voor een vrijblijvende intake.</p>
+      </div>
+      <form>
+        <div class="form-rij">
+          <div class="form-groep">
+            <label>Naam</label>
+            <input type="text" placeholder="Uw naam" required />
+          </div>
+          <div class="form-groep">
+            <label>E-mailadres</label>
+            <input type="email" placeholder="Uw e-mailadres" required />
+          </div>
+        </div>
+        <div class="form-groep">
+          <label>Omschrijving</label>
+          <textarea rows="5" placeholder="Omschrijf uw probleem zo concreet mogelijk..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Versturen</button>
+      </form>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2026 KlikFix — Alle rechten voorbehouden</p>
+    <div class="footer-inner">
+      <div class="logo">Klik<span>Fix</span></div>
+      <p>&copy; 2026 KlikFix — Alle rechten voorbehouden</p>
+    </div>
   </footer>
 
 </body>
