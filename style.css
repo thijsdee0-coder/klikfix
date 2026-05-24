@@ -307,6 +307,82 @@ nav ul a:hover {
   line-height: 1.7;
 }
 
+/* TARIEVEN */
+.tarieven {
+  padding: 6rem 8%;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.tarieven-kaarten {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tarief-kaart {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  background: var(--bg);
+}
+
+.tarief-kaart.tarief-hoofd {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--white);
+}
+
+.tarief-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.tarief-hoofd .tarief-label {
+  color: #94a3b8;
+}
+
+.tarief-prijs {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--white);
+  margin-bottom: 1.25rem;
+  line-height: 1;
+}
+
+.tarief-prijs span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.tarief-prijs.tarief-pm {
+  font-size: 1.75rem;
+  color: var(--text);
+}
+
+.tarief-omschrijving {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: #94a3b8;
+}
+
+.tarief-kaart:not(.tarief-hoofd) .tarief-omschrijving {
+  color: var(--muted);
+}
+
+.tarieven-voetnoot {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
 /* OVER ONS */
 .over {
   background: var(--text);
