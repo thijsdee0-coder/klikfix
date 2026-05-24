@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — KlikFix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo"><a href="index.html">Klik<span>Fix</span></a></div>
+    <ul>
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="over.html">Over ons</a></li>
+      <li><a href="tarieven.html">Tarieven</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Neem contact op</a>
+  </nav>
+
+  <section class="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <p class="label">Contact</p>
+        <h2>Neem contact op</h2>
+        <p>Omschrijf uw probleem en wij nemen binnen 1 tot 2 werkdagen contact met u op.</p>
+        <p>Onze werkdagen zijn <strong>dinsdag tot en met zaterdag</strong>.</p>
+      </div>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="61ce45ed-4424-487a-93ce-0e3988a70748" />
+        <input type="hidden" name="subject" value="Nieuw bericht via KlikFix" />
+        <input type="hidden" name="redirect" value="https://klikfix.online" />
+        <div class="form-rij">
+          <div class="form-groep">
+            <label>Naam</label>
+            <input type="text" name="name" placeholder="Uw naam" required />
+          </div>
+          <div class="form-groep">
+            <label>E-mailadres</label>
+            <input type="email" name="email" placeholder="Uw e-mailadres" required />
+          </div>
+        </div>
+        <div class="form-groep">
+          <label>Omschrijving</label>
+          <textarea name="message" rows="5" placeholder="Omschrijf uw probleem zo concreet mogelijk..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Versturen</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="logo"><a href="index.html">Klik<span>Fix</span></a></div>
+      <p>&copy; 2026 KlikFix — Alle rechten voorbehouden</p>
+    </div>
+  </footer>
+
+</body>
+</html>
