@@ -1,0 +1,61 @@
+.disclaimer-header {
+  background: var(--white);
+  padding: 5rem 8% 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.disclaimer-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.disclaimer-header .sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.disclaimer-inhoud {
+  padding: 4rem 8%;
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.disclaimer-blok h2 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+
+.disclaimer-blok p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.disclaimer-contact {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+
+.disclaimer-contact a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.disclaimer-contact a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: #64748b;
+  transition: color 0.15s;
+}
+
+footer a:hover {
+  color: #94a3b8;
+}
