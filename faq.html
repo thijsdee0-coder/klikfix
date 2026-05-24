@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — KlikFix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="faq.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo"><a href="index.html">Klik<span>Fix</span></a></div>
+    <ul>
+      <li><a href="index.html#diensten">Diensten</a></li>
+      <li><a href="index.html#over">Over ons</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Neem contact op</a>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="faq-header">
+    <p class="label">Veelgestelde vragen</p>
+    <h1>FAQ</h1>
+    <p class="sub">Staat uw vraag er niet bij? Neem gerust <a href="index.html#contact">contact</a> met ons op.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-sectie">
+    <div class="faq-lijst">
+
+      <div class="faq-item">
+        <button class="faq-vraag" aria-expanded="false">
+          Lossen jullie problemen ook op afstand op?
+          <span class="faq-icoon"></span>
+        </button>
+        <div class="faq-antwoord">
+          <p>Ja, waar mogelijk lossen wij problemen op via <strong>remote desktop</strong>. Via een beveiligde verbinding nemen wij tijdelijk de controle over uw computer over en lossen het probleem direct op — zonder dat u ergens naartoe hoeft. Dit is in veel gevallen sneller en eenvoudiger dan een bezoek ter plaatse.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-vraag" aria-expanded="false">
+          Wat kost een reparatie?
+          <span class="faq-icoon"></span>
+        </button>
+        <div class="faq-antwoord">
+          <p>Wij werken met vaste, transparante tarieven. Na een korte intake geven wij u altijd een duidelijke prijsopgave voordat wij aan de slag gaan. Geen verrassingen achteraf.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-vraag" aria-expanded="false">
+          Op welke dagen zijn jullie bereikbaar?
+          <span class="faq-icoon"></span>
+        </button>
+        <div class="faq-antwoord">
+          <p>Wij zijn bereikbaar van <strong>dinsdag tot en met zaterdag</strong>. Op aanvragen die buiten deze dagen binnenkomen reageren wij op de eerstvolgende werkdag.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-vraag" aria-expanded="false">
+          Hoe snel wordt er gereageerd op mijn aanvraag?
+          <span class="faq-icoon"></span>
+        </button>
+        <div class="faq-antwoord">
+          <p>Wij streven ernaar binnen <strong>1 tot 2 werkdagen</strong> te reageren op uw aanvraag.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-vraag" aria-expanded="false">
+          Wat valt er buiten jullie dienstverlening?
+          <span class="faq-icoon"></span>
+        </button>
+        <div class="faq-antwoord">
+          <p>KlikFix richt zich uitsluitend op software- en hardwareproblemen. Wij voeren geen elektriciteitswerk uit, leggen geen kabels en doen geen netwerkbeheer of infrastructuurprojecten.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="logo">Klik<span>Fix</span></div>
+      <p>&copy; 2026 KlikFix — Alle rechten voorbehouden</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-vraag').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-vraag').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        btn.setAttribute('aria-expanded', !expanded);
+      });
+    });
+  </script>
+
+</body>
+</html>

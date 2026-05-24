@@ -1,0 +1,136 @@
+/* FAQ HEADER */
+.faq-header {
+  background: var(--white);
+  padding: 5rem 8% 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.faq-header .sub {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.faq-header .sub a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.faq-header .sub a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ SECTIE */
+.faq-sectie {
+  padding: 4rem 8%;
+  background: var(--bg);
+  min-height: 60vh;
+}
+
+.faq-lijst {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+}
+
+/* FAQ ITEM */
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-vraag {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  gap: 1rem;
+  transition: background 0.15s;
+}
+
+.faq-vraag:hover {
+  background: var(--bg);
+}
+
+/* ICOON */
+.faq-icoon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.faq-icoon::before,
+.faq-icoon::after {
+  content: '';
+  position: absolute;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+}
+
+.faq-icoon::before {
+  width: 12px;
+  height: 2px;
+  top: 9px;
+  left: 4px;
+}
+
+.faq-icoon::after {
+  width: 2px;
+  height: 12px;
+  top: 4px;
+  left: 9px;
+}
+
+.faq-vraag[aria-expanded="true"] .faq-icoon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+/* ANTWOORD */
+.faq-antwoord {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 2rem;
+}
+
+.faq-vraag[aria-expanded="true"] + .faq-antwoord {
+  max-height: 400px;
+  padding: 0 2rem 1.5rem;
+}
+
+.faq-antwoord p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.faq-antwoord strong {
+  color: var(--text);
+  font-weight: 600;
+}
