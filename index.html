@@ -128,23 +128,24 @@
         <h2>Neem contact op</h2>
         <p>Omschrijf uw probleem en wij nemen binnen 24 uur contact met u op voor een vrijblijvende intake.</p>
       </div>
-      <form action="https://formspree.io/f/thijsdilstra@gmail.com" method="POST">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="61ce45ed-4424-487a-93ce-0e3988a70748" />
+        <input type="hidden" name="subject" value="Nieuw bericht via KlikFix" />
+        <input type="hidden" name="redirect" value="https://klikfix.online" />
         <div class="form-rij">
           <div class="form-groep">
             <label>Naam</label>
-            <input type="text" placeholder="Uw naam" required />
+            <input type="text" name="name" placeholder="Uw naam" required />
           </div>
           <div class="form-groep">
             <label>E-mailadres</label>
-            <input type="email" placeholder="Uw e-mailadres" required />
+            <input type="email" name="email" placeholder="Uw e-mailadres" required />
           </div>
         </div>
         <div class="form-groep">
           <label>Omschrijving</label>
-          <textarea rows="5" placeholder="Omschrijf uw probleem zo concreet mogelijk..."></textarea>
+          <textarea name="message" rows="5" placeholder="Omschrijf uw probleem zo concreet mogelijk..."></textarea>
         </div>
-        <input type="hidden" name="_subject" value="Nieuw bericht via KlikFix" />
-        <input type="hidden" name="_next" value="https://klikfix.online/bedankt" />
         <button type="submit" class="btn btn-primary">Versturen</button>
       </form>
     </div>
