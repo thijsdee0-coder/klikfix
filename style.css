@@ -128,11 +128,6 @@ nav ul a:hover {
   transform: translateY(-5px);
 }
 
-.kaart .icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
 .kaart h3 {
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
